@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num1 = 40;
+        let num2 = 60;
+        let num3 = 50;
+
+        let largest;
+           
+        if (num1 > num2 && num1 > num3) {
+            largest = num1;
+        }else if(num2 > num1 && num2 > num3){
+            largest = num2;
+        }else{
+            largest = num3;
+        }
+        document.write(+ num1 + ',' + num2 + ',' + num3 + ' Largest :' + largest );
+    </script>
+</body>
+</html>

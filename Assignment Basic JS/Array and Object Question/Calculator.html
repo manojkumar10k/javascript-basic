@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=4, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .box{
+            height: 300px;
+            width: 450px;
+            border: 2px solid black;
+        }
+        h1{
+            text-align: center;
+            margin-top: 50px;
+        }
+        td{
+            padding-top: 10px;
+            padding-left: 50px;
+            font-size: 20px;
+
+        }
+        .bt{
+            margin-left: 50px;
+        }
+        button{
+            margin: 10px 5px 0px 0px;
+            padding: 10px 20px 0px 20px;
+        }
+        .part{
+            display: flex;
+            justify-content: space-between;
+        }
+        .btn{
+            margin-right: 80px;
+            margin-top: 30px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1>Maths Operations</h1>
+        <table>
+            <tr>
+                <tr>
+                    <td>Enter 1st Number :</td>
+                    <td><input type="number" name="first" id="first"></td>
+                </tr>
+            
+                <tr>
+                    <td>Enter 2st Number :</td>
+                    <td><input type="number" name="second" id="second"></td>
+                </tr>
+            </tr>
+        </table>
+<div class="part">
+    <div class="bt">
+        <button id="add" onclick="add()">+</button>
+        <button id="sub" onclick="sub()">-</button>
+        <button id="mul" onclick="mul()">*</button>
+        <br>
+        <button id="div" onclick="div()">/</button>
+        <button id="mod" onclick="mod()">%</button>
+    </div>
+      <div class="btn">Answer is:
+        <span id="result"> </span>
+
+      </div>
+</div>
+    </div>
+    <script>
+         var num1 = document.getElementById('first');
+        var num2 = document.getElementById('second');
+        let box;
+
+
+      function add() {
+         box= Number(num1.value)+ Number(num2.value)
+         result.innerText=box;
+         result.style.color='blue';
+      }
+      function sub() {
+         box= Number(num1.value)- Number(num2.value)
+         result.innerText=box;
+         result.style.color='blue';
+      }
+      function mul() {
+         box= Number(num1.value)* Number(num2.value)
+         result.innerText=box;
+         result.style.color='blue';
+      }
+      function div() {
+         box= Number(num1.value)/ Number(num2.value)
+         result.innerText=box;
+         result.style.color='blue';
+      }
+      function mod() {
+         box= Number(num1.value)% Number(num2.value)
+         result.innerText=box;
+         result.style.color='blue';
+      }
+
+
+     
+    </script>
+</body>
+</html>

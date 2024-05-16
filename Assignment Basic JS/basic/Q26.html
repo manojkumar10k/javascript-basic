@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      function small(num1,num2,num3) {
+            if (num1>=num2 && num1 >= num3) {
+                return num1;
+            }else if(num2>=num1 && num2 >= num3){
+            return num2;
+
+            }else
+             return num3;
+            }
+             const n1 = prompt('Enter your number1');
+             const n2 = prompt('Enter your number2');
+             const n3 = prompt('Enter your number3');
+
+        let number = small(n1,n2,n3)
+
+         document.write(number)
+    </script>
+</body>
+</html>

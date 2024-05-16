@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .marksheet{
+        
+            width: 500px;
+            border: 2px solid black;
+            margin: auto;
+        }
+        h1{
+            padding-top: 50px;
+            text-align: center;
+
+        }
+        td{
+            padding-top: 10px;
+            padding-left: 50px;
+        }
+        button{
+            margin-left: 220px;
+            margin-top: 30px;
+            padding: 7px 30px 7px 30px;
+        }
+        .item{
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="marksheet">
+        <h1>Enter Marks</h1>
+        <table>
+            <tr>
+                <tr>
+                    <td>1. C Language</td>
+                    <td><input type="number" name="" id="num1"></td>
+                </tr>
+                <tr>
+                    <td>2. C++ Language</td>
+                    <td><input type="number" name="" id="num2"></td>
+                </tr>
+                <tr>
+                    <td>3. Database</td>
+                    <td><input type="number" name="" id="num3"></td>
+                </tr>
+                <tr>
+                    <td>4. HTML</td>
+                    <td><input type="number" name="" id="num4"></td>
+                </tr>
+                <tr>
+                    <td>5. CSS</td>
+                    <td><input type="number" name="" id="num5"></td>
+                </tr>
+                <tr>
+                    <td>6. php </td>
+                    <td><input type="number" name="" id="num6"></td>
+                </tr>
+                <tr>
+                    <td>7. Core java</td>
+                    <td><input type="number" name="" id="num7"></td>
+                </tr>
+            </tr>
+        </table>
+              <button id="add" onclick="cal()">Result</button>
+             <br>
+             <div class="item">
+                <div id="total">Total is : <span id="box"> </span>/350</div>
+                <div id="percentage">Percentage is :<span id="box1"> </span> </div>
+             </div>
+
+    </div>
+
+
+     <script>
+        var sub1 = document.getElementById('num1');
+        var sub2 = document.getElementById('num2');
+        var sub3 = document.getElementById('num3');
+        var sub4 = document.getElementById('num4');
+        var sub5 = document.getElementById('num5');
+        var sub6 = document.getElementById('num6');
+        var sub7 = document.getElementById('num7')
+        
+        let resvalue,avg;
+        
+       function cal() {
+            resvalue = Number(sub1.value)+Number(sub2.value)+Number(sub3.value)+Number(sub4.value)+Number(sub5.value)+Number(sub6.value)+Number(sub7.value);
+            avg=(resvalue*100)/350;
+           box.innerText=resvalue;
+            box1.innerText=`${avg}%`;
+            box.style.color='blue';
+            box1.style.color='blue';
+
+        }
+        
+
+    
+     </script>
+
+
+
+
+
+
+</body>
+</html>

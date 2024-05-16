@@ -1,0 +1,41 @@
+<html>
+<head>
+</head>
+<body>
+
+<table>
+   <tr>
+      <td> <input type="text" name="" id="first" placeholder="Enter character"/> </td>
+   </tr>
+    <tr>
+       <td> <button onclick = "vowel()">Submit</button> </td>
+    </tr>
+</table>
+      <div id="num"></div>
+</body>
+
+<script type="text/javascript">
+function vowel()
+{
+var ch;
+ch = document.getElementById("first").value;
+switch(ch)
+{
+case 'a':
+case 'e':
+case 'i':
+case 'o':
+case 'u':
+case 'A':
+case 'E':
+case 'I':
+case 'O':
+case 'U':
+document.getElementById("num"). innerHTML= "vowel character ?";
+break;
+default: document.getElementById("num").innerHTML= "Not an vowel ?";
+break;
+}
+}
+</script>
+</html>

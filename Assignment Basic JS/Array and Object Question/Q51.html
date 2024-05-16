@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let today = new Date();
+        let dd = today.getDate();
+
+        let mm = today.getMonth()+1;
+        
+        const yyyy = today.getFullYear();
+        
+        today= `0${mm}-0${dd}-${yyyy}`;
+        document.write(today);
+        document.write('<br>');
+        today =`0${mm}/0${dd}/${yyyy}`;
+        document.write(today);
+        document.write('<br>')
+        today =`0${dd}-0${mm}-${yyyy}`;
+        document.write(today);
+        document.write('<br>');
+        today =`0${dd}/0${mm}/${yyyy}`;
+        document.write(today);
+    </script>
+</body>
+</html>

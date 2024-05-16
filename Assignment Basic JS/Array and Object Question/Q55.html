@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form-Validation</title>
+</head>
+<body>
+
+         <h1>Form-Validation</h1>
+    <form action="">
+       
+        <label for="">Enter your Name:</label><br>
+        <input type="text" name="" id="name">
+        <br>
+        <span id="fname">  </span>
+        <br>
+        <label for="">Enter your Email</label><br>
+        <input type="email" name="" id="">
+        <br>
+        <span id="fname">  </span>
+        <br>
+        <label for="">Enter your Phone:</label><br>
+        <input type="tel" name="" id="num"><br><br>
+        <label for="">Password:</label><br>
+        <input type="password" name="" id="pass"><br><br>
+        <label for="">Re - Password:</label><br>
+        <input type="password" name="" id="rpass"><br><br>
+        <input type="submit" name="" id="" onclick="validateform()">
+    </form>
+
+
+    <script>
+         function validateform() {
+        let name = document.getElementById("name").value;
+        if(name=="" || name ==null){
+          let fname= document.getElementById('fname');
+          fname.innerText= "Enter your name"
+       
+          fname.style.color = "red"
+          
+        }
+        
+       }
+    </script>
+</body>
+</html>

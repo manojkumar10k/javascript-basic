@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+function fahrenheitToCelsius(fahrenheit) {
+    let celsius = (5 / 9) * (fahrenheit - 32);
+    return celsius;
+}
+let fahrenheitTemp = 32; 
+let celsiusTemp = fahrenheitToCelsius(fahrenheitTemp);
+document.write(fahrenheitTemp + " degrees Fahrenheit is equal to " + celsiusTemp.toFixed(2) + "degrees Celsius.");
+
+    </script>
+</body>
+</html>

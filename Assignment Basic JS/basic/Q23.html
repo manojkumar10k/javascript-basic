@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+           
+        
+    </style>
+</head>
+<body>
+
+    <table>
+        <tr>
+           <td> <input type="text" name="" id="first" placeholder="Enter character"/> </td>
+        </tr>
+         <tr>
+            <td> <button onclick = "vowel()">Submit</button> </td>
+         </tr>
+     </table>
+           <div id="num">
+            <video src="video/holiday-small-confetti.gif"></video>
+           </div>
+
+    <script>
+        function vowel()
+{
+var ch;
+ch = document.getElementById("first").value;
+switch(ch)
+{
+case 'a':
+case 'e':
+case 'i':
+case 'o':
+case 'u':
+case 'A':
+case 'E':
+case 'I':
+case 'O':
+case 'U':
+document.getElementById("num"). innerHTML= " Yes vowel ?";
+num.style.color= "red";
+
+
+break;
+default: document.getElementById("num").innerHTML= "Not  vowel ?";
+num.style.color='red';
+break;
+}
+}
+    </script>
+</body>
+</html>

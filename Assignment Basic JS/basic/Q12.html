@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       
+
+       function yearsToDays(years) {
+
+    return years * 365;
+}	
+
+
+function daysToYears(days) {
+
+    return days / 365;
+}
+
+
+let years = 5;
+let days = 1825; 
+
+
+let daysConverted = yearsToDays(years);
+document.write(years + " years is equal to " + daysConverted + " days.");
+
+
+let yearsConverted = daysToYears(days);
+document.write(days + " days is equal to approximately " + yearsConverted.toFixed(2) + " years.");
+
+
+    </script>
+</body>
+</html>

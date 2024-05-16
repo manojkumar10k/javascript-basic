@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       var number = prompt( 'enter your number')
+       var fact = 1;
+       if (number == 0) {
+            document.write(`number ${number}`);
+       }else if(number < 0){
+          document.write(`number is not possibal`);
+       }else{
+        for (let i = 1; i <= number; i++) {
+            fact = fact * i;
+            
+        }
+        document.write( `<h1> the factorial of ${number}  is  ${fact} </h1>` );
+       }
+    </script>
+</body>
+</html>
